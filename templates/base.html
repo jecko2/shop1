@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/custom-base.css' %}">
+    {% block stylesheet %}
+    {% endblock %}
+</head>
+<body>
+    <nav class="main-navbar">
+        <div class="container-fluid">
+            <div class="logo-brand">
+                <a href="#" class="logo-link">Tucky<span >MapH</span></a>
+            </div>
+            <ul class="nav-items">
+                <li class="nav-links">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-links">
+                    <a href="#" class="nav-link">Order</a>
+                </li>
+                <li class="nav-links">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="intro" class="bg-image vh-100 shadow-1-strong">
+        <div class="mask" style="
+              background: linear-gradient(
+                45deg,
+                rgba(91, 14, 214, 0.7),
+                rgba(29, 236, 197, 0.7) 100%
+              );
+              height: 50vh; display: flex; 
+              align-items:center;
+              flex-direction:column;
+              justify-content:center;
+
+            ">
+          <div class="container-show container">
+            <div class="text-white">
+              <h1 class="mb-3">Blankest and duvets on Sale</h1>
+              <h5 class="mb-4">Shop With Us Today</h5>
+              <div class="button-div">
+                <a class="btn btn-outline-light btn-lg m-2"
+                href="#" role="button"
+                rel="nofollow" target="_blank">Shop With Us</a>
+              <a class="btn btn-outline-light btn-lg m-2" href="#" target="_blank"
+                role="button">Explore Our stores</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+{% block content %}
+{% endblock %}
+</body>
+</html>

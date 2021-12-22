@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJANGO PK PRACTICE</title>
+    <style>
+        .container{
+            width: 900px;
+            height: 700px;
+            box-shadow: 1px 2px 1px 0 #f6f6f6;
+            margin: 20% auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-heder">Evening Practice</h1>
+        <div class="leads">
+            <h2>Agent <small>{{ leads.agent.user.email }}</small></h2>
+            {% for lead in leads %}
+                <h3>Lead Name: <a href="{% url 'leads:lead-detail' lead.id %}"><small>{{ lead.first_name }} {{ lead.last_name }}
+                </small></a></h3>
+                <p>Lead Email: <small>{{ lead.email_addr }}</small></p>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

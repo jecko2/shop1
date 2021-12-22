@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+{% endblock %}
+
+{% block content %}
+
+<main class="mb-5">
+    <div class="container">
+      <section>
+        <div class="row-index">
+          <div class="img-mb-4">
+            <img src="{% static 'img/artdet.jpg' %}" alt="stock" srcset="">
+          </div>
+
+          <div class="text-area">
+            <h4>Facilis consequatur eligendi</h4>
+            <p class="text-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              consequatur eligendi quisquam doloremque vero ex debitis
+              veritatis placeat unde animi laborum sapiente illo possimus,
+              commodi dignissimos obcaecati illum maiores corporis.
+            </p>
+            <h4>Doloremque vero ex debitis</h4>
+            <p class="text-info">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+              itaque voluptate nesciunt laborum incidunt. Officia, quam
+              consectetur. Earum eligendi aliquam illum alias, unde optio
+              accusantium soluta, iusto molestiae adipisci et?
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="separation">
+        <hr class="separator"> <br>
+        <h4 class="collection" style="text-align: center;">Our Collections</h4>
+        
+    </div>
+    <div class="container-cards">
+        <section>
+            <div class="row">
+                <div class="card-rows">
+                    <div class="card-detail">
+                        <img src="{% static 'img/bay3.jpg' %}" alt="img" srcset="">
+                        <h4 class="card-info">Blanket</h4>
+                        <p class="some-info">
+                            Some quick example text to 
+                            build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <a href="" class="buy-btn">Buy Now</a>
+                    </div>
+    
+                    <div class="card-detail">
+                        <img src="{% static 'img/bay4.jpg' %}" alt="img" srcset="">
+                        <h4 class="card-info">Blanket</h4>
+                        <p class="some-info">
+                            Some quick example text to 
+                            build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <a href="" class="buy-btn">Buy Now</a>
+                    </div>
+    
+                    <div class="card-detail">
+                        <img src="{% static 'img/bay6.jpg' %}" alt="img" srcset="">
+                        <h4 class="card-info">Blanket</h4>
+                        <p class="some-info">
+                            Some quick example text to 
+                            build on the card title and make up the bulk of the card's content.
+                        </p>
+                         <a href="" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+          </section>
+    </div>
+    <div class="separation"> <br>
+        <hr class="separator"><br><br>
+        <h4 class="collection" style="text-align: center;">Contact Us</h4><br><br>
+    </div>
+    <div class="container-det" id="contact">
+        <section>
+            <div class="row-contact">
+               <form action="" method="">
+                   <div class="names-label">
+                       <input type="text" name="first_name" id="first_name" 
+                       placeholder="First Name"required>
+                       <input type="text" name="last_name" id="last_name" 
+                       placeholder="Last Name"required>
+                   </div>
+                   <div class="email-field">
+                       <input type="email" name="email" id="email" placeholder="Email Address"
+                       required>
+                   </div>
+                   <div class="tel-field">
+                       <input type="tel" name="tel" id="tel" placeholder="Telephone">
+                   </div> <br>
+                   <button class="purchase">Submit</button>
+               </form>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <hr style="color: #262626; height:1px;">
+    <div class="social">
+        <div class="social-icons">
+            <h4 class="social">Follow Us on social media</h4>
+            <br>
+            <div class="social-icon">
+                <span>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </span>
+            </div>
+        </div>
+        <div class="copy">
+            <p class="copyright">&copy;2021 Copyright: jECKONIA.Inc</p>
+        </div>
+    </div>
+</footer>
+
+{% endblock %}
